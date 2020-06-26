@@ -1,0 +1,41 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:100"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<body>
+  <a href="#" class="button" onclick="lol('player.html')">Listen Live</a>
+  <a href="#" class="button" onclick="lol('iHeartRadio.html')">iHeart</a>
+  <a href="#" class="button" onclick="lol('twitterFeed.html')">Just Played</a>
+  <a href="#" class="button" onclick="lol('about.html')">About Us</a>
+  <style>
+    .button {
+      background-color: white;
+      border: none;
+      color: #fe4365;
+      padding: 15px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Roboto, sans-serif;
+      font-size: 30px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    function lol(url) {
+      document.getElementById("myFrame").src = url;
+    }
+  </script>
+  <iframe
+    src="player.html"
+    id="myFrame"
+    frameborder="0"
+    height="100%"
+    width="100%"
+  ></iframe>
+</body>
